@@ -46,3 +46,9 @@ func _on_body_entered(body: Node2D) -> void:
 	# disable player collision after hit so we emit the signal only once
 	# deferred is used to safely disable collision when the engine is ready
 	$CollisionShape2D.set_deferred("disabled", true)
+
+func start(pos: Vector2) -> void:
+	# start the game
+	position = pos
+	show()
+	$CollisionShape2D.disabled = false
