@@ -13,4 +13,5 @@ func _process(delta: float) -> void:
 
 
 func game_over() -> void:
-	pass
+	$ScoreTimer.stop()
+	$MobTimer.stop()
