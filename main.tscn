@@ -9,3 +9,5 @@
 [node name="MobTimer" type="Timer" parent="."]
 
 [node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
