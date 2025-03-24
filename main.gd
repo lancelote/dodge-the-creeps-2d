@@ -21,3 +21,15 @@ func new_game() -> void:
 	score = 0
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
+
+
+func _on_mob_timer_timeout() -> void:
+	pass
+
+
+func _on_score_timer_timeout() -> void:
+	pass
+
+
+func _on_start_timer_timeout() -> void:
+	pass
