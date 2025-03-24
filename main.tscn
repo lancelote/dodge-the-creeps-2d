@@ -7,3 +7,5 @@
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 
 [node name="MobTimer" type="Timer" parent="."]
+
+[node name="ScoreTimer" type="Timer" parent="."]
