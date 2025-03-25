@@ -4,14 +4,6 @@ extends Node
 var score
 
 
-func _ready() -> void:
-	pass
-
-
-func _process(delta: float) -> void:
-	pass
-
-
 func game_over() -> void:
 	$ScoreTimer.stop()
 	$MobTimer.stop()
@@ -19,8 +11,12 @@ func game_over() -> void:
 
 func new_game() -> void:
 	score = 0
+	
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
+	
+	$HUD.update_score(score)
+	$HUD.show_message("Get Ready")
 
 
 func _on_mob_timer_timeout() -> void:
