@@ -7,6 +7,7 @@ var score
 func game_over() -> void:
 	$ScoreTimer.stop()
 	$MobTimer.stop()
+	$HUD.show_game_over()
 
 
 func new_game() -> void:
