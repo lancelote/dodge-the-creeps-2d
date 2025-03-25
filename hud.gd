@@ -24,3 +24,12 @@ func show_game_over() -> void:
 
 func update_score(score: int) -> void:
 	$ScoreLabel.text = str(score)
+
+
+func _on_start_button_pressed() -> void:
+	$StartButton.hide()
+	start_game.emit()
+
+
+func _on_message_timer_timeout() -> void:
+	$Message.hide()
