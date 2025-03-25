@@ -4,10 +4,7 @@ extends CanvasLayer
 signal start_game
 
 
-func _ready() -> void:
-	pass
-
-
-
-func _process(delta: float) -> void:
-	pass
+func show_message(text: String) -> void:
+	$Message.text = text
+	$Message.show()
+	$MessageTimer.start()
