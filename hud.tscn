@@ -14,16 +14,21 @@ theme_override_font_sizes/font_size = 64
 text = "42"
 
 [node name="Message" type="Label" parent="."]
-offset_left = 77.0
-offset_top = 556.0
-offset_right = 377.0
-offset_bottom = 634.0
+offset_left = 82.0
+offset_top = 505.0
+offset_right = 382.0
+offset_bottom = 583.0
 theme_override_fonts/font = ExtResource("1_37p78")
 theme_override_font_sizes/font_size = 64
 text = "message"
 
 [node name="StartButton" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 151.0
+offset_top = 601.0
+offset_right = 309.0
+offset_bottom = 679.0
+theme_override_fonts/font = ExtResource("1_37p78")
+theme_override_font_sizes/font_size = 64
+text = "start"
 
 [node name="MessageTimer" type="Timer" parent="."]
